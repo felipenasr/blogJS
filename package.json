@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Sistema de blog em JS",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "start" : "gulp",
+    "scripts": "gulp scripts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
