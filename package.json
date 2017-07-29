@@ -1,0 +1,15 @@
+{
+  "name": "blogJS",
+  "version": "1.0.0",
+  "description": "Sistema de blog em JS",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
