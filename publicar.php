@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="container">
-			<?php require_once "partials/main.php"; ?>
+			<?php require_once "partials/form.php"; ?>
 		</div>
 
 		<script type="text/javascript" src="build/jquery.min.js"></script>

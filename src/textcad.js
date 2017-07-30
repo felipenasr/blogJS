@@ -13,27 +13,38 @@
 		button: document.querySelector('#submit')
 	};
 	var validaCampos = function (e){
-		e.preventDefault();
 		var errors = 0;
+		var data = {};
+		e.preventDefault();
 		if (ui.txt.value == ""){
 			$(ui.txt).addClass('error');
 			errors++;
 		}else{
 			$(ui.txt).removeClass('error');
+			data[ui.txt.id] = ui.txt.value;
 		}
 		ui.fields.forEach(function(field, key){
 			if (field.value.trim() == "") {
 				$(field).addClass('error');
 				errors++;
 			}else{
+				data[field.id] = field.value;
 				$(field).removeClass('error');
 			}
 		});
+
 		if (errors == 0 ){
-      		document.querySelector('.error').focus();
+			gravacaoDosTextos(data);
 		}
 	};
 
+	var gravacaoDosTextos = function(data){
+		data.id = localStorage.txtId ?parseInt(localStorage.txtId) + 1: 0;
+		localStorage.txtId = parseInt(data.id);
+		var textos = (localStorage.textos)?JSON.parse(localStorage.textos):[];
+		textos.push(data);
+		localStorage.textos = JSON.stringify(textos);
+	};
 
 
 	// funcao gatilho do cadastro
