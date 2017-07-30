@@ -44,8 +44,8 @@
 		var textos = (localStorage.textos)?JSON.parse(localStorage.textos):[];
 		textos.push(data);
 		localStorage.textos = JSON.stringify(textos);
+		location.replace("text.php?post=text"+localStorage.txtId);
 	};
-
 
 	// funcao gatilho do cadastro
 	var cadastro = function(){

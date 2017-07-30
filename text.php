@@ -12,12 +12,14 @@
 		</div>
 
 		<div class="container">
-			<?php require_once "partials/form.php"; ?>
+			<article class="row" id="textSpace">
+
+			</article>
 		</div>
 
 		<script type="text/javascript" src="build/jquery.min.js"></script>
 		<script type="text/javascript" src="build/materialize.min.js"></script>
-		<script type="text/javascript" src="build/textcad.min.js"></script>
+		<script type="text/javascript" src="build/showText.min.js"></script>
 
 	</body>
 </html>

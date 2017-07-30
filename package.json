@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "gulp",
-    "scripts": "gulp scripts"
+    "textcad": "gulp textcad",
+    "showText": "gulp showText"
   },
   "keywords": [],
   "author": "",

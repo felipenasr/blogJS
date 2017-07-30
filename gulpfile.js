@@ -4,12 +4,19 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 
 
-gulp.task("scripts", function () {
-  console.log('rodando task script');
+gulp.task("textcad", function () {
   // gulp.src("src/**/*.js")
-  gulp.src(["src/*.js"])
-       .pipe(babel({presets: ["es2015"]}))
-       .pipe(uglify())
-       .pipe(concat("main.min.js"))
-       .pipe(gulp.dest("build"));
+  gulp.src(["src/textcad.js"])
+     .pipe(babel({presets: ["es2015"]}))
+     .pipe(uglify())
+     .pipe(concat("textcad.min.js"))
+     .pipe(gulp.dest("build"));
+});
+
+gulp.task("showText", function () {
+	gulp.src(["src/showText.js"])
+     .pipe(babel({presets: ["es2015"]}))
+     .pipe(uglify())
+     .pipe(concat("showText.min.js"))
+     .pipe(gulp.dest("build"));
 });
