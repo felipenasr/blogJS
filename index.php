@@ -17,7 +17,9 @@
 
 		<script type="text/javascript" src="build/jquery.min.js"></script>
 		<script type="text/javascript" src="build/materialize.min.js"></script>
-		<script type="text/javascript" src="build/main.min.js"></script>
+		<script type="text/javascript" src="src/localstorage.js"></script>
+		<script type="text/javascript" src="src/matcall.js"></script>
+		<script type="text/javascript" src="src/lastPosts.js"></script>
 
 	</body>
 </html>

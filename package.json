@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp",
     "textcad": "gulp textcad",
+    "lastPosts": "gulp lastPosts",
     "showText": "gulp showText"
   },
   "keywords": [],

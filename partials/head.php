@@ -4,5 +4,5 @@
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/icons.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>BlogJS</title>
+	<title>blog_js</title>
 </head>

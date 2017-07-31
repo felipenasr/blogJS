@@ -12,11 +12,15 @@
 		txt: document.querySelector('textarea'),
 		button: document.querySelector('#submit')
 	};
+	// validando os campos
 	var validaCampos = function (e){
 		var errors = 0;
 		var data = {};
+		// subistituindo os enters por breaklines
 		ui.txt.value = ui.txt.value.replace(/\n/g, '<br>');
+		// desabilitando evento do button
 		e.preventDefault();
+		// verificando campos vazios
 		if (ui.txt.value == ""){
 			$(ui.txt).addClass('error');
 			errors++;
@@ -35,11 +39,13 @@
 		});
 
 		if (errors == 0 ){
+			// gravando dados
 			gravacaoDosTextos(data);
 		}
 	};
 
 	var gravacaoDosTextos = function(data){
+		// processo de gravaçado de dados, criaçao de ID dinamico e tratando dados com JSON
 		data.id = localStorage.txtId ?parseInt(localStorage.txtId) + 1: 0;
 		localStorage.txtId = parseInt(data.id);
 		var textos = (localStorage.textos)?JSON.parse(localStorage.textos):[];
@@ -50,6 +56,7 @@
 
 	// funcao gatilho do cadastro
 	var cadastro = function(){
+
 		ui.button.addEventListener("click", validaCampos);
 	}();
 })();

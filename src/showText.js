@@ -1,7 +1,9 @@
 (function () {
+	// montando página de textos
 	var uiText;
 
 	var recebeTexto = function(){
+
 		var textos = JSON.parse(localStorage.textos);
 		var textoPrincipal = textos[uiText];
 		var imprimeTexto = `<div class="col s12">
@@ -25,7 +27,7 @@
 
 
 
-
+	// recebendo as informações da URL
 	var catchTextID = function(){
 		uiText = location.search;
 		uiText = uiText.replace(/\D/g, '');

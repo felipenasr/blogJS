@@ -1,8 +1,17 @@
+/*alterando cor da borda do campo, quando houver dados invalidos*/
 .error{
 	border-bottom: 1px solid #f44336 !important;
 }
 
+/*definindo cor do leia-mais na home*/
+a.leia-mais{
+	color: black !important;
+}
+a.leia-mais:hover{
+	color: grey !important;
+}
 
+/*alinhando botão do menu responsivo*/
 nav .button-collapse{
 	margin: 0;
 }
