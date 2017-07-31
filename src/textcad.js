@@ -15,6 +15,7 @@
 	var validaCampos = function (e){
 		var errors = 0;
 		var data = {};
+		ui.txt.value = ui.txt.value.replace(/\n/g, '<br>');
 		e.preventDefault();
 		if (ui.txt.value == ""){
 			$(ui.txt).addClass('error');
